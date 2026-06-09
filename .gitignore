@@ -1,0 +1,6 @@
+node_modules/
+packs-src/
+packs/
+*.zip
+.DS_Store
+.env

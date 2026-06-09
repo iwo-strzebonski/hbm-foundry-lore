@@ -1,0 +1,353 @@
+{
+  "id": "hbm-rpg-v3-lore",
+  "title": "Homebrew Magic: RPG v3 — Lore",
+  "description": "Companion lore module for the HbM RPG v3 system. Provides journal entries for setting, deities, history, and narrative chapters from the official books.",
+  "version": "1.3.4",
+  "manifest": "https://vtt-content.octoturge.com/packages/module/hbm-rpg-v3-lore.json",
+  "download": "https://vtt-content.octoturge.com/packages/module/hbm-rpg-v3-lore-v1.3.4.zip",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "hbm-rpg-v3",
+        "type": "system",
+        "compatibility": {
+          "minimum": "1.0.0",
+          "verified": "1.0.0"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Iwo Strzeboński"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "lang/pl.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "abyss",
+      "label": "Otchłań",
+      "path": "packs/abyss",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "lore",
+          "sourceBook": "abyss-curse"
+        }
+      }
+    },
+    {
+      "name": "crimson-cult",
+      "label": "Szkarłatny Kult",
+      "path": "packs/crimson-cult",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "lore",
+          "sourceBook": "crimson-cult"
+        }
+      }
+    },
+    {
+      "name": "blood-magic-history",
+      "label": "Magia Krwi — Historia",
+      "path": "packs/blood-magic-history",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "lore",
+          "sourceBook": "arcanum-sanguinis"
+        }
+      }
+    },
+    {
+      "name": "economy",
+      "label": "Złoto, Stal i Magia",
+      "path": "packs/economy",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "lore",
+          "sourceBook": "gold-steel-magic"
+        }
+      }
+    },
+    {
+      "name": "magic-book-lore",
+      "label": "Księga Magii — Wprowadzenia",
+      "path": "packs/magic-book-lore",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "lore",
+          "sourceBook": "magic-book"
+        }
+      }
+    },
+    {
+      "name": "core-rules-lore",
+      "label": "Podręcznik Gry — Wprowadzenia",
+      "path": "packs/core-rules-lore",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "lore",
+          "sourceBook": "core-rules"
+        }
+      }
+    },
+    {
+      "name": "bestiary-lore",
+      "label": "Bestiariusz — Lore",
+      "path": "packs/bestiary-lore",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "lore",
+          "sourceBook": "bestiary"
+        }
+      }
+    },
+    {
+      "name": "humanity-guide",
+      "label": "Przewodnik Ludzkości po Magicznym Świecie",
+      "path": "packs/humanity-guide",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "lore",
+          "sourceBook": "humanity-guide"
+        }
+      }
+    },
+    {
+      "name": "disciplines-lore",
+      "label": "Dziedziny Magii",
+      "path": "packs/disciplines-lore",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "vault"
+        }
+      }
+    },
+    {
+      "name": "organizations",
+      "label": "Organizacje",
+      "path": "packs/organizations",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "vault"
+        }
+      }
+    },
+    {
+      "name": "races-lore",
+      "label": "Rasy",
+      "path": "packs/races-lore",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "vault"
+        }
+      }
+    },
+    {
+      "name": "classes",
+      "label": "Klasy (Grupy)",
+      "path": "packs/classes",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "vault"
+        }
+      }
+    },
+    {
+      "name": "concepts",
+      "label": "Koncepty",
+      "path": "packs/concepts",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "vault"
+        }
+      }
+    },
+    {
+      "name": "locations",
+      "label": "Lokacje",
+      "path": "packs/locations",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "vault"
+        }
+      }
+    },
+    {
+      "name": "npcs",
+      "label": "Postacie",
+      "path": "packs/npcs",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "vault"
+        }
+      }
+    },
+    {
+      "name": "conflicts",
+      "label": "Konflikty",
+      "path": "packs/conflicts",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "vault"
+        }
+      }
+    },
+    {
+      "name": "player-characters",
+      "label": "Postacie Graczy",
+      "path": "packs/player-characters",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "vault"
+        }
+      }
+    },
+    {
+      "name": "adventures",
+      "label": "Przygody",
+      "path": "packs/adventures",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "hbm-rpg-v3-lore": {
+          "category": "vault"
+        }
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Lore — HbM RPG v3",
+      "sorting": "a",
+      "packs": [
+        "core-rules-lore",
+        "magic-book-lore",
+        "bestiary-lore",
+        "blood-magic-history",
+        "crimson-cult",
+        "abyss",
+        "economy",
+        "humanity-guide"
+      ]
+    },
+    {
+      "name": "Świat — HbM RPG v3",
+      "sorting": "a",
+      "packs": [
+        "disciplines-lore",
+        "organizations",
+        "races-lore",
+        "classes",
+        "concepts",
+        "locations",
+        "npcs",
+        "conflicts",
+        "player-characters",
+        "adventures"
+      ]
+    }
+  ]
+}

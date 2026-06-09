@@ -1,0 +1,22 @@
+{
+  "name": "hbm-rpg-v3-lore",
+  "version": "1.3.4",
+  "description": "Foundry VTT lore companion module for Homebrew Magic: RPG v3.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:packs": "bun scripts/build-journal-packs.ts",
+    "build:packs:strict": "bun scripts/build-journal-packs.ts --strict",
+    "lint:uuid-refs": "bun scripts/lint-uuid-refs.ts",
+    "package": "bun scripts/bump-version.ts && bun run build:packs && bun scripts/package.ts",
+    "push": "bun scripts/push-package.ts"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.3",
+    "@types/archiver": "^7.0.0",
+    "@types/node": "^25.6.0",
+    "archiver": "^7.0.1",
+    "typescript": "^5.5.0"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt"
+}
