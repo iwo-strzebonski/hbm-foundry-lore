@@ -4,7 +4,7 @@
  * `@UUID[Compendium.<pkg>.<pack>...]` patterns, and reports any reference
  * to a system pack we know about but a slug that does not exist.
  *
- * Currently informational only — the journal parser does not yet emit
+ * Currently informational only - the journal parser does not yet emit
  * UUID cross-links automatically. This script provides the framework
  * for Phase 7.3/7.4 integration.
  */
@@ -45,7 +45,7 @@ function scanFile(file: string) {
 try {
   walk(packsSrcDir);
 } catch {
-  console.log('[lint-uuid] no packs-src/ — run build:packs first.');
+  console.log('[lint-uuid] no packs-src/ - run build:packs first.');
   process.exit(0);
 }
 

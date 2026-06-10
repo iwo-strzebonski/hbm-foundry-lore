@@ -1,5 +1,7 @@
 {
   "HBM_LORE": {
-    "module": { "name": "Homebrew Magic: RPG v3 — Lore" }
+    "module": {
+      "name": "Homebrew Magic: RPG v3 - Lore"
+    }
   }
 }

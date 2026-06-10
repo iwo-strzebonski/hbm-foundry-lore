@@ -83,7 +83,7 @@ const PACK_CONFIGS: PackConfig[] = [
     sources: [
       // Pure lore narrative.
       { path: 'ObsidianNotes/lore/02. Otchłań i Magia.md' },
-      // Rules intro (Wstęp only — mechanics chapters are skipped).
+      // Rules intro (Wstęp only - mechanics chapters are skipped).
       { path: 'ObsidianNotes/rules/02. Klątwa Otchłani.md', prefaceTitle: 'Wstęp' },
     ],
     skip: /^(Rozdział II - Talenty|Rozdział III - Dary|Rozdział IV - Choroby|Rozdział V - Zaklęcia|Rozdział X - Artefakty)/i,
@@ -238,7 +238,7 @@ for (const pack of byPack.keys()) {
   console.log(`  ✓ compiled ${pack}`);
 }
 
-console.log(`[lore] done — ${byPack.size} packs in packs/`);
+console.log(`[lore] done - ${byPack.size} packs in packs/`);
 
 function toFoundryJournal(doc: JournalDoc, sort: number): Record<string, unknown> {
   const fId = makeFoundryId(doc.id);

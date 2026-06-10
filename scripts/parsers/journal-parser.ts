@@ -7,7 +7,7 @@
  *
  * A. Legacy Google-Docs export (`_books/`):
  *    - No frontmatter.
- *    - TOC is a plain-text block that reuses the same `Rozdział X — Title`
+ *    - TOC is a plain-text block that reuses the same `Rozdział X - Title`
  *      headings. The parser deduplicates: the SECOND occurrence of each
  *      heading is the real body.
  *
@@ -33,7 +33,7 @@ export interface JournalDoc {
   pack: string;
   /** Source provenance for traceability. */
   source: { book: string; chapter: string; line: number };
-  /** Pages — each becomes a `JournalEntryPage`. */
+  /** Pages - each becomes a `JournalEntryPage`. */
   pages: JournalPage[];
 }
 
@@ -66,10 +66,10 @@ export interface JournalParseConfig {
 
 // Matches both plain-text (`Rozdział IV - Title`) and heading-prefixed
 // (`## Rozdział IV - Title`) chapter lines. Optional trailing page number.
-const CHAPTER_RE = /^(?:#{1,6}\s+)?Rozdzia[łl]\s+([IVXLC]+)\s*[:.—\-–]\s*(.+?)(?:\s+\d+)?$/;
+const CHAPTER_RE = /^(?:#{1,6}\s+)?Rozdzia[łl]\s+([IVXLC]+)\s*[:.\-–]\s*(.+?)(?:\s+\d+)?$/;
 const SEPARATOR = /^_{3,}$/;
 const FRONTMATTER_FENCE = /^---\s*$/;
-// Obsidian TOC bullets: `- [[#Anchor|Label]]` — skip in body content too
+// Obsidian TOC bullets: `- [[#Anchor|Label]]` - skip in body content too
 const OBSIDIAN_TOC_BULLET = /^[-*]\s+\[\[#/;
 
 /** Returns the first non-frontmatter line index (skips `--- ... ---` block). */
@@ -94,7 +94,7 @@ export function parseJournalBook(cfg: JournalParseConfig): JournalDoc[] {
     if (m) occurrences.push({ idx: i, roman: m[1], title: m[2].trim(), raw: lines[i].trim() });
   }
   if (occurrences.length === 0) {
-    // No chapters found — if there's a prefaceTitle, still try to emit preface.
+    // No chapters found - if there's a prefaceTitle, still try to emit preface.
     if (cfg.prefaceTitle) {
       const pages = bodyToPages(lines);
       if (pages.length > 0) {
@@ -117,7 +117,7 @@ export function parseJournalBook(cfg: JournalParseConfig): JournalDoc[] {
     }
     bodyChapters.push(occ);
   }
-  // If no duplicates were found (no plain-text TOC — typical of native files),
+  // If no duplicates were found (no plain-text TOC - typical of native files),
   // treat the entire list as body chapters.
   const chapters = bodyChapters.length > 0 ? bodyChapters : occurrences;
 
@@ -158,7 +158,7 @@ export function parseJournalBook(cfg: JournalParseConfig): JournalDoc[] {
     const slug = slugify(`${ch.roman}-${ch.title}`);
     docs.push({
       id: `${cfg.pack}-${slug}`,
-      name: `Rozdział ${ch.roman} — ${ch.title}`,
+      name: `Rozdział ${ch.roman} - ${ch.title}`,
       pack: cfg.pack,
       source: { book: cfg.sourceBook, chapter: ch.title, line: startIdx + ch.idx + 1 },
       pages,

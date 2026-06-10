@@ -1,4 +1,4 @@
-# HbM RPG v3 — Lore (Foundry VTT module)
+# HbM RPG v3 - Lore (Foundry VTT module)
 
 Companion lore module for the [HbM RPG v3 system](https://github.com/iwo-strzebonski/hbm-foundry-system). Ships JournalEntry compendia for setting, history, and narrative chapters from the official books.
 
