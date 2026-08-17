@@ -2,9 +2,9 @@
   "id": "hbm-rpg-v3-lore",
   "title": "Homebrew Magic: RPG v3 - Lore",
   "description": "Companion lore module for the HbM RPG v3 system. Provides journal entries for setting, deities, history, and narrative chapters from the official books.",
-  "version": "1.3.6",
+  "version": "1.3.19",
   "manifest": "https://vtt-content.octoturge.com/packages/module/hbm-rpg-v3-lore.json",
-  "download": "https://vtt-content.octoturge.com/packages/module/hbm-rpg-v3-lore-v1.3.6.zip",
+  "download": "https://vtt-content.octoturge.com/packages/module/hbm-rpg-v3-lore-v1.3.19.zip",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
@@ -169,7 +169,7 @@
     },
     {
       "name": "disciplines-lore",
-      "label": "Dziedziny Magii",
+      "label": "Dziedziny Magii - Lore",
       "path": "packs/disciplines-lore",
       "type": "JournalEntry",
       "ownership": {
@@ -199,7 +199,7 @@
     },
     {
       "name": "races-lore",
-      "label": "Rasy",
+      "label": "Rasy - Lore",
       "path": "packs/races-lore",
       "type": "JournalEntry",
       "ownership": {
